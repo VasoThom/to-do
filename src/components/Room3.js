@@ -5,6 +5,8 @@ import "./style.css";
 function Room3() {
   return (
     <div className="room3">
+      <h1> Hotel Daten</h1>
+
       {rooms
 
         .sort((a, b) => a.roomNo - b.roomNo)

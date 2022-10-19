@@ -1,0 +1,10 @@
+body {
+  background-color: rgb(146, 146, 155);
+  width: 100vw;
+  height: 100vh;
+}
+
+.room {
+  width: 500px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}

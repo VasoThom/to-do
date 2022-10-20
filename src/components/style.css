@@ -5,6 +5,25 @@ body {
 }
 
 .room {
-  width: 500px;
+  margin: auto;
+  width: 50%;
   border: 1px solid rgba(255, 255, 255, 0.5);
+  /* padding: 3px; */
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+}
+.room:hover {
+  background-color: rgba(159, 5, 154, 0.521);
+}
+
+h1 {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+  padding: 20px;
+  text-shadow: 5px 5px 5px rgba(6, 32, 128, 0.5);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 70px;
+  color: blueviolet;
 }

@@ -11,12 +11,15 @@ function Room3() {
 
         .sort((a, b) => a.roomNo - b.roomNo)
         .map((item, index) => {
+          // ({ ...item, checkedIn  });
+
           console.log(index);
           return <Room key={index} item={item} />;
         })}
     </div>
   );
 }
+
 /*
     <div className="room3">
        <h1>{rooms[0].roomNo}</h1>

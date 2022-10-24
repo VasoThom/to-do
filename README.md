@@ -18,3 +18,13 @@ Unser Hotel ist etwas in die Jahre gekommen. So wird die Zimmerbelegung bisher n
 4. Da wir mehr als drei Zimmer haben, macht es Sinn, auf eine dynamische Generierung umzusteigen. Nutze hierfür map() und die vollständige Liste mit allen Datensätzen.
 5. Die Zimmernummern sind noch nicht geordnet. Kannst du sie nach Zimmernummer aufsteigend sortieren und dann ausgeben? Beachte dabei, dass die ursprüngliche Liste nicht umgeschrieben werden soll. Die Sortierung muss innerhalb deines Codes passieren.
 6. Die Datumsangaben checkIn und checkOut lassen sich bestimmt noch etwas schöner formatieren. Kannst du sie in das Format DD.MM.YY bringen?
+
+noch eine aufgabe:
+
+1. Füge einen Button "Check In / Check Out" in der Komponente Room.js ein und setze einen OnClick-Handler darauf. Gib das Event in der Konsole aus.
+2. Implementiere einen State "checkedIn" in der Komponente Room, der anfangs auf false steht und wechsle beim Klick auf den Button zwischen false und true hin und her.
+3. Überwache den Wechsel des States mittels useEffect und zeige einen Alert mit dem Text "Zimmer Nr. <roomNo> ist nun belegt.", sobald der State auf true gewechselt ist.
+4. Erweitere die rooms.json um eine neue Property "checkedIn" in allen Objekten. Sie soll einen Boolean enthalten. Nutze die neue Property in der Komponente Room für den State.
+5. 5. Verschiebe den OnClick-Handler in die Komponente App und übergebe ihn an die einzelnen Room-Komponenten. Achte beim Klick darauf, dass der richtige Raum aktualisiert wird.
+6. Nach dem Ändern des checkedIn States, speichere das gesamte Array im Local Storage.
+7. Lade das Array aus dem Local Storage beim Aufruf der App und speichere es in einem State in der Komponente App. Ist kein Array im Local Storage vorhanden, soll die rooms.json verwendet werden.

@@ -25,6 +25,6 @@ noch eine aufgabe:
 2. Implementiere einen State "checkedIn" in der Komponente Room, der anfangs auf false steht und wechsle beim Klick auf den Button zwischen false und true hin und her.
 3. Überwache den Wechsel des States mittels useEffect und zeige einen Alert mit dem Text "Zimmer Nr. <roomNo> ist nun belegt.", sobald der State auf true gewechselt ist.
 4. Erweitere die rooms.json um eine neue Property "checkedIn" in allen Objekten. Sie soll einen Boolean enthalten. Nutze die neue Property in der Komponente Room für den State.
-5. 5. Verschiebe den OnClick-Handler in die Komponente App und übergebe ihn an die einzelnen Room-Komponenten. Achte beim Klick darauf, dass der richtige Raum aktualisiert wird.
+5. Verschiebe den OnClick-Handler in die Komponente App und übergebe ihn an die einzelnen Room-Komponenten. Achte beim Klick darauf, dass der richtige Raum aktualisiert wird.
 6. Nach dem Ändern des checkedIn States, speichere das gesamte Array im Local Storage.
 7. Lade das Array aus dem Local Storage beim Aufruf der App und speichere es in einem State in der Komponente App. Ist kein Array im Local Storage vorhanden, soll die rooms.json verwendet werden.

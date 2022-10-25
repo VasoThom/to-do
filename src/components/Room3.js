@@ -1,10 +1,14 @@
 import rooms from "../rooms.json";
 import Room from "./Room";
 import "./style.css";
+import Inputs from "./inputs";
 
 function Room3() {
   return (
     <div className="room3">
+      <div className="form">
+        <Inputs />
+      </div>
       <h1> Hotel Daten</h1>
 
       {rooms

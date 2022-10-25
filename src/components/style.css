@@ -3,7 +3,23 @@ body {
   width: 100vw;
   height: 100vh;
 }
-
+body:hover {
+  background: rgb(204, 185, 185);
+}
+.form {
+  margin: auto;
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  width: 800px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 15px;
+  padding: 10px 10px;
+}
+.formname {
+  color: red;
+  text-shadow: 5px 5px 5px rgba(119, 15, 15, 0.76);
+  font-size: 60px;
+}
 .room {
   margin: auto;
   width: 50%;

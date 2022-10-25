@@ -27,3 +27,20 @@ h1 {
   font-size: 70px;
   color: blueviolet;
 }
+
+.red {
+  color: rgb(172, 15, 15);
+  font-size: 20px;
+  text-decoration: line-through black;
+}
+.blue {
+  color: blue;
+  font-size: 20px;
+  text-shadow: 2px 2px 2px #fff;
+}
+button {
+  padding: 1rem 2rem;
+  color: bisque;
+  background: rgb(202, 37, 37);
+  border-radius: 50%;
+}

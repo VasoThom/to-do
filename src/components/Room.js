@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./style.css";
+// import rooms from "../rooms.json";
 
 function Room({ item }) {
   const reverse = (str) => str.split("-").reverse().join(".");
@@ -19,9 +20,10 @@ function Room({ item }) {
   // localStorage.check = JSON.stringify(check);
   // var storedcheck = JSON.parse(localStorage.check);
   // console.log(storedcheck);
-  localStorage.setItem("check", JSON.stringify({ item }));
-  var storedcheck = JSON.parse(localStorage.getItem("check"));
-  console.log(storedcheck);
+
+  // useEffect(() => {
+  //   setCheck(localStorage.getItem("check") || <rooms.JSON />);
+  // }, []);
 
   return (
     <div>
@@ -31,16 +33,17 @@ function Room({ item }) {
         <h3>Vorname :{item.guest.lastName}</h3>
         <h3>Ankunft :{reverse(item.checkIn)}</h3>
         <h3>Abfahrt :{reverse(item.checkOut)}</h3>
+        {/* <p> {item.CheckedIn}</p> */}
 
         <button onClick={Handler}>{check ? "Check In" : "Check Out"}</button>
         {check === true && (
           <p>
-            <b>Das Zimmer ist verfügbar</b>
+            <b className="blue">Das Zimmer ist verfügbar</b>
           </p>
         )}
         {check === false && (
           <p>
-            <b>Das Zimmer ist nicht verfügbar</b>
+            <b className="red">Das Zimmer ist nicht verfügbar</b>
           </p>
         )}
       </div>

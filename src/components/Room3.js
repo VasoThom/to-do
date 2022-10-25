@@ -13,7 +13,7 @@ function Room3() {
         .map((item, index) => {
           // ({ ...item, checkedIn  });
 
-          console.log(index);
+          // console.log(index);
           return <Room key={index} item={item} />;
         })}
     </div>
